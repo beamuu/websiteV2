@@ -11,22 +11,32 @@ const Header = styled.p`
     font-size: 1.2rem;
     color: #fff;
 `
-const CardBox = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`
 
 export default function Projects() {
     return (
         <Container className="container" id="contact">
             <Header>PAST PROJECTS</Header>
-            <CardBox>
-                <Card 
-                    title="Katrade"
-                    img="https://github.com/katrade/resources/blob/main/katradefav.png?raw=true"
-                    details="Items trading platform"
+            <div className="row m-0">
+                <div className="col-lg-4">
+                    <Card
+                        title="Katrade"
+                        img="https://github.com/katrade/resources/blob/main/katradefav.png?raw=true"
+                        details="Items trading platform"
                     />
-            </CardBox>
+                </div>
+                <div className="col-lg-8">
+                    <Card 
+                        img="https://github.com/katrade/resources/blob/main/mainlogo-white.png?raw=true"
+                    />
+                </div>
+            </div>
+            <div className="row m-0">
+                <div className="col-lg">
+                    
+                </div>
+                <div className="col-lg"></div>
+                <div className="col-lg"></div>
+            </div>
         </Container>
     )
 }

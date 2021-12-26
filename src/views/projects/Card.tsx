@@ -2,9 +2,7 @@ import styled from "styled-components"
 
 const CardContainer = styled.div`
     margin: 20px 10px;
-    width: 100%;
-    max-width: 370px;
-    aspect-ratio: 3 / 2;
+    min-height: 160px;
     background-color: rgba(70,70,70, 0.3);
     border-radius: 20px;
     cursor: pointer;
@@ -12,6 +10,10 @@ const CardContainer = styled.div`
 
     padding: 30px;
     color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         background: rgb(12,14,88);
@@ -42,9 +44,7 @@ interface ICard {
 export default function Card({ img, title, details, link }: ICard) {
     return (
         <CardContainer>
-            <img src={img} height={70}></img>
-            <Title>{ title }</Title>
-            <Detail>{ details }</Detail>
+            <img src={img} height={60}></img>
         </CardContainer>
     )
 }
