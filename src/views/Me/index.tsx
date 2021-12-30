@@ -2,11 +2,12 @@ import styled from "styled-components"
 import { FullScreenBanner } from "../../components/FullScreen"
 import { AiOutlineArrowRight, AiOutlineGithub } from "react-icons/ai"
 import { blue, pink } from "../../styles/colors"
+import bg from "../../images/bg-mywebsite-01.png"
 const Container = styled(FullScreenBanner)`
     background-color: transparent;
     display: flex;
-    align-items: end;
-    background-image: url(https://cdn.discordapp.com/attachments/872112441528553512/924018712787431454/unknown.png);
+    align-items: flex-end;
+    background-image: url(${bg});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

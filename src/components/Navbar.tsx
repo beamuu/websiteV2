@@ -6,7 +6,7 @@ const GlobalContainer = styled.div`
     justify-content: center;
     position: sticky;
     backdrop-filter: blur(5px);
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.6);
     top: 0;
     z-index: 50;
 `
@@ -15,7 +15,6 @@ const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
     margin: 0;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +26,7 @@ const MenuContainer = styled.div`
     align-items: center;
 `
 const Menu = styled.a`
-    color: #00000040;
+    color: #00000070;
     margin: 0 15px;
     text-decoration: none;
     &:hover {

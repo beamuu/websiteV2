@@ -29,7 +29,7 @@ export default function Skills() {
                     <Card
                         title="Solidity: Programming language"
                         img="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_solidity_icon_130156.png"
-                        details="Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state."
+                        details="Solidity is an object-oriented, high-level language for implementing smart contracts."
                         color="#000"
                         visitorText="Learn more"
                     />
