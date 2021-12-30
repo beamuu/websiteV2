@@ -9,8 +9,8 @@ const NavbarContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(3px);
-    background-color: #191a1c60;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.7);
     position: sticky;
     top: 0;
 `
@@ -19,16 +19,16 @@ const MenuContainer = styled.div`
     align-items: center;
 `
 const Menu = styled.a`
-    color: #ffffff90;
+    color: #00000040;
     margin: 0 15px;
     text-decoration: none;
     &:hover {
-        color: #fff;
+        color: #000;
     }
 `
 const Brand = styled.p`
     font-size: 1.22rem;
-    color: #fff;
+    color: #000;
 `
 
 const LName = styled.b`

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Contact from './views/contact';
 import Me from './views/Me';
 import Projects from './views/projects';
+import Skills from './views/skills';
 
 
 
@@ -13,7 +14,8 @@ function App() {
         <>
             <Navbar></Navbar>
             <Me />
-            <Projects />
+            {/* <Projects /> */}
+            <Skills />
             <Contact />
             
         </>

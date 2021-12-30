@@ -12,10 +12,9 @@ const Container = styled(FullScreenBanner)`
     background-repeat: no-repeat;
 `
 const Name = styled.p`
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2.7rem;
     margin-right: 20px;
-    color: #fff;
 `
 const Flex = styled.div`
     display: flex;
@@ -47,13 +46,13 @@ const Text = styled.p`
     margin-bottom: 30px;
 `
 const Label = styled.a`
+    color: #000;
     width: fit-content;
     margin-top: 40px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff; 
     transition: 300ms ease;
     &:hover {
         color: ${pink};
