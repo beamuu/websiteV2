@@ -1,6 +1,16 @@
 import styled from "styled-components"
 import { pink } from "../styles/colors"
 
+const GlobalContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.7);
+    top: 0;
+    z-index: 50;
+`
+
 const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
@@ -9,10 +19,8 @@ const NavbarContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(4px);
-    background-color: rgba(255,255,255,0.7);
-    position: sticky;
-    top: 0;
+    
+    
 `
 const MenuContainer = styled.div`
     display: flex;
@@ -37,19 +45,20 @@ const LName = styled.b`
 
 export default function Navbar() {
     return (
-        <NavbarContainer>
-            <div>
-                <Brand>NUTCHANON <LName>C.</LName></Brand>
-            </div>
-            <div className="disable-when-mobile">
-                <MenuContainer>
-                    <Menu href="#me">Me</Menu>
-                    <Menu href="#projects">Projects</Menu>
-                    <Menu href="#skills">Skills</Menu>
-                    <Menu href="#contact">Contact</Menu>
-                </MenuContainer>
-            </div>
-
-        </NavbarContainer>
+        <GlobalContainer>
+            <NavbarContainer className="container-xxl">
+                <div>
+                    <Brand>NUTCHANON <LName>C.</LName></Brand>
+                </div>
+                <div className="disable-when-mobile">
+                    <MenuContainer>
+                        <Menu href="#me">Me</Menu>
+                        <Menu href="#projects">Projects</Menu>
+                        <Menu href="#skills">Skills</Menu>
+                        <Menu href="#contact">Contact</Menu>
+                    </MenuContainer>
+                </div>
+            </NavbarContainer>
+        </GlobalContainer>
     )
 }

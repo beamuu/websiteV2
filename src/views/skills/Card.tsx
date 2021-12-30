@@ -1,37 +1,45 @@
 import styled from "styled-components"
 import { BsArrowUpRight } from "react-icons/bs"
+
 const CardContainer = styled.div`
     position: relative;
-    margin: 20px 10px;
-    height: 150px;
-    background-color: rgba(70,70,70, 0.1);
+    margin: 80px 10px;
+    min-height: 230px;
+    background-color: #fff;
     cursor: pointer;
     transition: 300ms ease;
-
-    border: 1px solid #363636;
-
-    &:hover {
-        background-color: rgba(70,70,70, 0.3);
-    }
+    box-shadow: 0 20px 10px rgba(0,0,0,0.06);
 `
 const Col1 = styled.div`
     height: 100%;
+    display: flex;
+    min-height: 230px;
+    justify-content: center;
+    align-items: center;
 `
-const Title = styled.p`
-    font-size: 1.2rem;
-    font-weight: 500;
+const Col2 = styled.div`
+    padding: 2rem;
+    min-height: 230px;
+    align-item: center;
+    position: relative;
+`
+
+const Title = styled.h4`
 `
 
 const Detail = styled.p`
     margin-top: 10px;
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: rgba(255,255,255,0.5);
+    font-size: 1rem;
+    font-weight: 400;
 `
-const TopRight = styled.div`
+const BottomRight = styled.div`
     position: absolute;
-    top: 20px;
-    left: 94%;
+    bottom: 20px;
+    right: 6%;
+`
+
+const VisitorText = styled.p`
+    color: #00000060;
 `
 
 interface ICard {
@@ -40,42 +48,32 @@ interface ICard {
     details?: string
     link?: string
     color?: string
+    size?: number
+    visitorText?: string
 }
 
 
 
 
 
-export default function Card({ img, title, details, link, color }: ICard) {
+export default function Card({ img, title, details, link, color, size, visitorText }: ICard) {
     return (
-        <div>
-
-            {/* <CardContainer>
-                <TopRight>
-                    <BsArrowUpRight />
-                </TopRight>
-                <img src={img} height={60} className="me-5" />
-                <div>
-                    
+            <CardContainer className="row mx-0">
+                <Col1
+                    className="col-lg-5"
+                    style={{
+                        backgroundColor: color ? color : "#fff"
+                    }}
+                >
+                    <img src={img} height={size ? size : 80} />
+                </Col1>
+                <Col2 className="col-lg-7">
                     <Title>{title}</Title>
                     <Detail>{details}</Detail>
-                </div>
-
-            </CardContainer> */}
-
-            <CardContainer className="row m-0">
-                <Col1 
-                    className="col-lg-4" 
-                    style={{
-                        backgroundColor: color ? color: "#fff"
-                    }}
-                    >
-                        ?
-                </Col1>
-                <div className="col-lg-8">
-                        ?? 
-                </div>
+                    <BottomRight>
+                        <VisitorText>{ visitorText} <BsArrowUpRight className="ms-1"/></VisitorText>
+                    </BottomRight>
+                </Col2>
             </CardContainer>
-        </div>
     )
 }
