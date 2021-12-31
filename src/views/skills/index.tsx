@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { BsArrowUpRight } from "react-icons/bs"
 import Card from "./Card"
 import { pink } from "../../styles/colors"
+import solidityIcon from "../../images/file_type_solidity_icon_130156.png"
 const Container = styled.div`
     padding: 40px auto;
     
@@ -28,7 +29,7 @@ export default function Skills() {
                 <Upshift>
                     <Card
                         title="Solidity: Programming language"
-                        img="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_solidity_icon_130156.png"
+                        img={solidityIcon}
                         details="Solidity is an object-oriented, high-level language for implementing smart contracts."
                         color="#000"
                         visitorText="Learn more"

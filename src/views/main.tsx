@@ -1,4 +1,5 @@
 import { AppTitle } from "../components/App/Title";
+import HPNY from "../components/HPNY";
 import Navbar from "../components/Navbar";
 import Contact from "./contact";
 import Ending from "./ending";
@@ -17,7 +18,7 @@ export default function Main() {
             <Skills />
             <Ending />
             <Contact />
-            
+            <HPNY />
         </>
     )
 }

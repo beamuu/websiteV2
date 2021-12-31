@@ -37,6 +37,10 @@ h6 {
     display: flex;
 }
 
+.no-decoration {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 570px) {
     .disable-when-mobile {
         display: none;

@@ -1,6 +1,8 @@
+import { useLocation, useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import { pink } from "../styles/colors"
-
+import { RiHomeFill } from "react-icons/ri"
+import { Link } from "react-router-dom"
 const GlobalContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -43,19 +45,33 @@ const LName = styled.b`
 `
 
 export default function Navbar() {
+
+    const { pathname } = useLocation();
+    const navigate = useNavigate();
+
+
     return (
         <GlobalContainer>
             <NavbarContainer className="container-xxl">
-                <div>
+                <Link to="/" className="no-decoration">
                     <Brand>NUTCHANON <LName>C.</LName></Brand>
-                </div>
+                </Link>
                 <div className="disable-when-mobile">
-                    <MenuContainer>
-                        <Menu href="#me">Me</Menu>
-                        <Menu href="#projects">Projects</Menu>
-                        <Menu href="#skills">Skills</Menu>
-                        <Menu href="#contact">Contact</Menu>
-                    </MenuContainer>
+                    {
+                        pathname === '/' ?
+
+                            <MenuContainer>
+                                <Menu href="#me">Me</Menu>
+                                <Menu href="#projects">Projects</Menu>
+                                <Menu href="#skills">Skills</Menu>
+                                <Menu href="#contact">Contact</Menu>
+                            </MenuContainer>
+
+                            :
+                            <Link to="/" className="no-decoration text-black">
+                                <RiHomeFill size={25} />
+                            </Link>
+                    }
                 </div>
             </NavbarContainer>
         </GlobalContainer>
