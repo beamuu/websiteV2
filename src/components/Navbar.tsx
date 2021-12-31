@@ -54,7 +54,7 @@ export default function Navbar() {
         <GlobalContainer>
             <NavbarContainer className="container-xxl">
                 <Link to="/" className="no-decoration">
-                    <Brand>NUTCHANON <LName>C.</LName></Brand>
+                    <Brand>NUTCHANON <LName>C</LName></Brand>
                 </Link>
                 <div className="disable-when-mobile">
                     {
@@ -62,7 +62,6 @@ export default function Navbar() {
 
                             <MenuContainer>
                                 <Menu href="#me">Me</Menu>
-                                <Menu href="#projects">Projects</Menu>
                                 <Menu href="#skills">Skills</Menu>
                                 <Menu href="#contact">Contact</Menu>
                             </MenuContainer>

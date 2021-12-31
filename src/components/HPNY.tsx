@@ -30,7 +30,7 @@ const Close = styled.div`
 `
 const Box = styled.div`
     position: relative;
-    background-color: #000000aa;
+    background-color: #000000;
     width: fit-content;
     height: 70px;
     color: #fff;
@@ -38,6 +38,7 @@ const Box = styled.div`
     justify-content: center;
     align-items: center;    
     padding: 0px 50px;
+    border-radius: 8px;
 `
 export default function HPNY() {
 
