@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { pink } from "../styles/colors"
 import { RiHomeFill } from "react-icons/ri"
 import { Link } from "react-router-dom"
+import logo from "../../src/images/websitev2-logo.svg"
 const GlobalContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -54,7 +55,9 @@ export default function Navbar() {
         <GlobalContainer>
             <NavbarContainer className="container-xxl">
                 <Link to="/" className="no-decoration">
-                    <Brand>NUTCHANON <LName>C</LName></Brand>
+                    <div className="d-flex align-items-center">
+                        <img src={logo} height={30} className="me-3"/><Brand>NUTCHANON <LName>C</LName></Brand>
+                    </div>
                 </Link>
                 <div className="disable-when-mobile">
                     {

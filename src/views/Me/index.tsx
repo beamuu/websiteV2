@@ -73,7 +73,7 @@ export default function Me() {
                 </Flex>
                 <Text>Computer Engineering Student</Text>
                 <Role>BLOCKCHAIN DEVELOPER</Role>
-                <Label href="https://github.com/nutchanonc"><AiOutlineGithub className="me-2"/> VIEW GITHUB  <AiOutlineArrowRight /></Label>
+                <Label href="https://github.com/nutchanonc"><AiOutlineGithub className="me-2"/> View GitHub <AiOutlineArrowRight /></Label>
             </div>
         </Container>
     )
