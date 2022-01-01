@@ -4,6 +4,7 @@ import Navbar from "../../../components/Navbar"
 import Contact from "../../contact"
 import Card from "../../skills/Card"
 import solidityIcon from "../../../images/file_type_solidity_icon_130156.png"
+import { Helmet } from "react-helmet"
 
 const Container = styled.div`
     margin-top: 150px;
@@ -27,6 +28,9 @@ export default function SkillsPath() {
     return (
         <>
             <Navbar></Navbar>
+            <Helmet>
+                <title>My Relevant Skills.</title>
+            </Helmet>
             <Screen>
                 <Container className="container">
                     <div className="row">

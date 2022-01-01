@@ -25,6 +25,7 @@ const More = styled.a`
 export default function Skills() {
     return (
         <Global>
+           
             <Container className="container">
                 <Upshift>
                     <Card
